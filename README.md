@@ -200,11 +200,6 @@ GROUP BY category;
 | Mexican  | 11.800000      |
 | Italian  | 16.750000      |
 
-**Output**:
-| menu_item_id | item_name     | category | price  |
-|--------------|---------------|----------|--------|
-| 130          | Shrimp Scampi | Italian  | 19.95  |
-
 ---
 
 ## Exploring the Orders Table
