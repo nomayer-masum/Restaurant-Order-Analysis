@@ -1,5 +1,7 @@
 # Restaurant Order Analysis
 
+*This project analyzes customer behavior by identifying the most popular menu items, the highest-priced dishes, and the orders with the highest spend.*
+
 ## Database Setup
 
 Creating Database:
