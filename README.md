@@ -336,7 +336,6 @@ LIMIT 10;
 | 9                | 4        | 2023-01-01  | 12:16:31   | 117     | 117          | Chicken Burrito     | Mexican  | 12.95  |
 | 10               | 5        | 2023-01-01  | 12:21:30   | 117     | 117          | Chicken Burrito     | Mexican  | 12.95  |
 
----
 
 ### Number of Purchases by Item (Ascending)
 ```sql
@@ -384,7 +383,6 @@ ORDER BY number_of_purchases ASC;
 | Edamame                  | Asian    | 620                 |
 | Hamburger                | American | 622                 |
 
----
 
 ### Number of Purchases by Item (Descending)
 ```sql
@@ -432,7 +430,6 @@ ORDER BY number_of_purchases DESC;
 | Potstickers              | Asian    | 205                 |
 | Chicken Tacos            | Mexican  | 123                 |
 
----
 
 ### Top 5 Orders by Total Spend
 ```sql
@@ -454,7 +451,6 @@ LIMIT 5;
 | 330      | 189.70      |
 | 2675     | 185.10      |
 
----
 
 ### Item Categories by number of items
 ```sql
@@ -474,7 +470,6 @@ GROUP BY mi.category;
 | Italian  | 8               |
 | Asian    | 2               |
 
----
 
 ### Item Categories for Top 5 Orders by Spend
 ```sql
