@@ -510,3 +510,9 @@ ORDER BY mi.category, number_of_items DESC;
 | 1957     | Mexican  | 3               |
 | 2075     | Mexican  | 3               |
 | 440      | Mexican  | 2               |
+
+---
+
+## Insights
+
+*  
