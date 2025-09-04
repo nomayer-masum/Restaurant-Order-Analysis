@@ -98,14 +98,6 @@ select * from menu_items
 order by price asc limit 1;
 ```
 
-### RFM Segmentation Results
-
-This query retrieves the RFM segmentation data, showing each customer's RFM scores and assigned segment.
-
-```sql
-SELECT * FROM RFM_SEGMENTATION_DATA;
-```
-
 **Output**:
 
 | menu_item_id | item_name | category | price |
