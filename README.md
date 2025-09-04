@@ -99,7 +99,6 @@ order by price asc limit 1;
 ```
 
 **Output**:
-
 | menu_item_id | item_name | category | price |
 |--------------|-----------|----------|-------|
 | 113          | Edamame   | Asian    | 5.00  |
@@ -109,10 +108,101 @@ order by price asc limit 1;
 ```select * from menu_items
 order by price desc limit 1;
 ```
-
 **Output**:
-
 | menu_item_id | item_name     | category | price  |
 |--------------|---------------|----------|--------|
 | 130          | Shrimp Scampi | Italian  | 19.95  |
 
+
+### Italian Dish Count
+```sql
+SELECT COUNT(category) AS count_of_dishes 
+FROM menu_items 
+WHERE category = 'Italian';
+```
+
+**Output:**
+| count_of_dishes |
+|-----------------|
+| 9               |
+
+### Italian Dishes Ordered by Price (Ascending)
+```sql
+SELECT * 
+FROM menu_items 
+WHERE category = 'Italian' 
+ORDER BY price ASC;
+```
+
+**Output:**
+| menu_item_id | item_name               | category | price  |
+|--------------|-------------------------|----------|--------|
+| 124          | Spaghetti               | Italian  | 14.50  |
+| 126          | Fettuccine Alfredo      | Italian  | 14.50  |
+| 128          | Cheese Lasagna          | Italian  | 15.50  |
+| 129          | Mushroom Ravioli        | Italian  | 15.50  |
+| 132          | Eggplant Parmesan       | Italian  | 16.95  |
+| 125          | Spaghetti & Meatballs   | Italian  | 17.95  |
+| 127          | Meat Lasagna            | Italian  | 17.95  |
+| 131          | Chicken Parmesan        | Italian  | 17.95  |
+| 130          | Shrimp Scampi           | Italian  | 19.95  |
+
+### Italian Dishes Ordered by Price (Descending)
+```sql
+SELECT * 
+FROM menu_items 
+WHERE category = 'Italian' 
+ORDER BY price DESC;
+```
+
+**Output:**
+| menu_item_id | item_name               | category | price  |
+|--------------|-------------------------|----------|--------|
+| 130          | Shrimp Scampi           | Italian  | 19.95  |
+| 125          | Spaghetti & Meatballs   | Italian  | 17.95  |
+| 127          | Meat Lasagna            | Italian  | 17.95  |
+| 131          | Chicken Parmesan        | Italian  | 17.95  |
+| 132          | Eggplant Parmesan       | Italian  | 16.95  |
+| 128          | Cheese Lasagna          | Italian  | 15.50  |
+| 129          | Mushroom Ravioli        | Italian  | 15.50  |
+| 124          | Spaghetti               | Italian  | 14.50  |
+| 126          | Fettuccine Alfredo      | Italian  | 14.50  |
+
+
+### Number of Dishes by Category
+```sql
+SELECT category, COUNT(item_name) AS number_of_dishes 
+FROM menu_items 
+GROUP BY category;
+```
+
+**Output:**
+| category | number_of_dishes |
+|----------|------------------|
+| American | 6                |
+| Asian    | 8                |
+| Mexican  | 9                |
+| Italian  | 9                |
+
+
+### Average Dish Price by Category
+```sql
+SELECT category, AVG(price) AS avg_dish_price 
+FROM menu_items 
+GROUP BY category;
+```
+
+**Output:**
+| category | avg_dish_price |
+|----------|----------------|
+| American | 10.066667      |
+| Asian    | 13.475000      |
+| Mexican  | 11.800000      |
+| Italian  | 16.750000      |
+
+**Output**:
+| menu_item_id | item_name     | category | price  |
+|--------------|---------------|----------|--------|
+| 130          | Shrimp Scampi | Italian  | 19.95  |
+
+---
