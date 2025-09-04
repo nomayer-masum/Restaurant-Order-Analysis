@@ -10,7 +10,7 @@ select * from menu_items
 order by price desc limit 1;
 
 -- How many Italian dishes are on the menu? What are the least and most expensive Italian dishes on the menu?
-select count(category) from menu_items
+select count(category) as count_of_dishes from menu_items
 where category = "Italian";
 
 select * from menu_items
