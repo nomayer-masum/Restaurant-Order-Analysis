@@ -505,4 +505,12 @@ ORDER BY mi.category, number_of_items DESC;
 
 ## Insights
 
-*  
+* Hamburger, Edamame, Korean Beef Bowl are the most purchased items
+
+* American and Asian items are sold the most in volume
+
+* Top spending orders mostly came from Italian items
+
+
+* Italian dishes are higher priced and bring more revenue per order
+
